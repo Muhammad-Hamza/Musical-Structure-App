@@ -6,6 +6,7 @@ import android.text.Layout;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -32,23 +33,14 @@ public class numberActiviy extends AppCompatActivity {
         words.add(7,"Eight");
         words.add(8,"Nine");
         words.add(9,"Ten");
-        words.add(0,"One");
-        words.add(1,"Two");
-        words.add(2,"Three");
-        words.add(3,"Four");
-        words.add(4,"Five");
-        words.add(5,"Six");
-        words.add(6,"Seven");
-        words.add(7,"Eight");
-        words.add(8,"Nine");
-        words.add(9,"Ten");
 
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
 
-        ListView listView = (ListView) findViewById(R.id.list);
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.list_view, words);
 
-        listView.setAdapter(itemsAdapter);
+        GridView gridView = (GridView) findViewById(R.id.list);
+
+        gridView.setAdapter(itemsAdapter);
 
     }
 }
