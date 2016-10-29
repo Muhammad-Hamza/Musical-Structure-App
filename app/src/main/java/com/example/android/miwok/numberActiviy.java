@@ -12,7 +12,8 @@ public class numberActiviy extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.words);
-
+    }}
+/**
         ArrayList<Word> words = new ArrayList<Word>();
 
         words.add(new Word("Ek","One"));
@@ -36,3 +37,4 @@ public class numberActiviy extends AppCompatActivity {
 
     }
 }
+**/

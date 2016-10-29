@@ -26,14 +26,14 @@ public class coloursActivity extends AppCompatActivity {
         ArrayList<Word> colourWords = new ArrayList<Word>();
 
 
-        colourWords.add(new Word("Lal", "Red"));
-        colourWords.add(new Word("Hara", "Green"));
-        colourWords.add(new Word("Kathai", "Brown"));
-        colourWords.add(new Word("Surmai", "Gray"));
-        colourWords.add(new Word("kala", "Black"));
-        colourWords.add(new Word("sufaid", "White"));
-        colourWords.add(new Word("dhoolzard", "Dust Yellow"));
-        colourWords.add(new Word("peele sarsu", "Mustard Yellow"));
+        colourWords.add(new Word("Lal", "Red",R.drawable.color_red));
+        colourWords.add(new Word("Hara","Green" ,R.drawable.color_green));
+        colourWords.add(new Word("Kathai", "Brown",R.drawable.color_brown));
+        colourWords.add(new Word("Surmai", "Gray",R.drawable.color_gray));
+        colourWords.add(new Word("kala", "Black",R.drawable.color_black));
+        colourWords.add(new Word("sufaid", "White",R.drawable.color_white));
+        colourWords.add(new Word("dhoolzard", "Dust Yellow",R.drawable.color_dusty_yellow));
+        colourWords.add(new Word("peele sarsu", "Mustard Yellow",R.drawable.color_mustard_yellow));
 
 
         customArrayAdapter colourArray = new customArrayAdapter(this, colourWords);

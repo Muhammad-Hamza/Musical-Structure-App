@@ -8,11 +8,14 @@ public class Word {
 
     private String mMivokwords;
     private String mdefaultWords;
+    private int mimageResID;
 
-    public Word(String mivokwords,String defaultWords)
+
+    public Word(String mivokwords,String defaultWords,int imageResId)
     {
         mMivokwords=mivokwords;
         mdefaultWords=defaultWords;
+        mimageResID=imageResId;
     }
 
 
@@ -26,6 +29,10 @@ public class Word {
     {
         return mdefaultWords;
 
+    }
+    public int getimageResID()
+    {
+        return mimageResID;
     }
 
 }

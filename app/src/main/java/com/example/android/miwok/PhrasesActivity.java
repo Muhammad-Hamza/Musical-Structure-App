@@ -13,7 +13,8 @@ public class PhrasesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.words);
 
-
+    }}
+    /**
         ArrayList<Word> phrasess = new ArrayList<Word>();
 
         phrasess.add(new Word("Ap kahan Ja rahe ho","Where are you going?"));
@@ -35,5 +36,5 @@ public class PhrasesActivity extends AppCompatActivity {
 
     }
 }
-
+**/
 
