@@ -9,7 +9,7 @@ public class Word {
     private String mMivokwords;
     private String mdefaultWords;
 
-    public void Word(String mivokwords,String defaultWords)
+    public Word(String mivokwords,String defaultWords)
     {
         mMivokwords=mivokwords;
         mdefaultWords=defaultWords;

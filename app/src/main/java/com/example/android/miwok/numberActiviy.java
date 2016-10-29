@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class numberActiviy extends AppCompatActivity {
 
@@ -20,27 +21,26 @@ public class numberActiviy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_number_activiy);
 
-        ArrayList<String> words = new ArrayList<String>();
+        ArrayList<Word> words = new ArrayList<Word>();
+
+        words.add(new Word("Lutti","One"));
+        words.add(new Word("otiiko","Two"));
+        words.add(new Word("tolookosu","Three"));
+        words.add(new Word("oyyisa","Four"));
+        words.add(new Word("massokka","Five"));
+        words.add(new Word("temmoka","Six"));
+        words.add(new Word("kenekaku","Seven"));
+        words.add(new Word("kawinta","Eight"));
+        words.add(new Word("wo'e","Nine"));
+        words.add(new Word("na'aacha","Ten"));
 
 
-        words.add(0,"One");
-        words.add(1,"Two");
-        words.add(2,"Three");
-        words.add(3,"Four");
-        words.add(4,"Five");
-        words.add(5,"Six");
-        words.add(6,"Seven");
-        words.add(7,"Eight");
-        words.add(8,"Nine");
-        words.add(9,"Ten");
 
+        customArrayAdapter Adapter = new customArrayAdapter(this, words);
 
+        ListView listView= (ListView) findViewById(R.id.list);
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.list_view, words);
-
-        GridView gridView = (GridView) findViewById(R.id.list);
-
-        gridView.setAdapter(itemsAdapter);
+        listView.setAdapter(Adapter);
 
     }
 }
