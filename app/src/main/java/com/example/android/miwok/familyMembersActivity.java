@@ -1,7 +1,9 @@
 package com.example.android.miwok;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -32,6 +34,10 @@ public class familyMembersActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(FamilyMemArray);
+        listView.setBackgroundColor(Color.parseColor("#008000"));
+
+
+
 
     }
 }

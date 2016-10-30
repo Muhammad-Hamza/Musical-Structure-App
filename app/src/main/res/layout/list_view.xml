@@ -5,15 +5,17 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
 
+
  >
 
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
         android:id="@+id/imageResource"
         android:src="@mipmap/ic_launcher"
+        android:background="@color/tan_background"
         />
 
 
@@ -21,13 +23,16 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="16dp"
+    >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/miwokText"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
         tools:text="Lutti"
-
         />
 
 
@@ -35,6 +40,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/defaultText"
+        android:layout_marginLeft="16dp"
+        android:textColor="#ffffff"
         tools:text="One"
         />
 </LinearLayout>

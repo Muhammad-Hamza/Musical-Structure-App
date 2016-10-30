@@ -1,5 +1,6 @@
 package com.example.android.miwok;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Layout;
@@ -41,6 +42,7 @@ public class coloursActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(colourArray);
+        listView.setBackgroundColor(Color.parseColor("#800080"));
     }
 
 }

@@ -1,10 +1,12 @@
 package com.example.android.miwok;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import android.graphics.Color;
 
 public class PhrasesActivity extends AppCompatActivity {
 
@@ -13,8 +15,8 @@ public class PhrasesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.words);
 
-    }}
-    /**
+
+
         ArrayList<Word> phrasess = new ArrayList<Word>();
 
         phrasess.add(new Word("Ap kahan Ja rahe ho","Where are you going?"));
@@ -33,8 +35,9 @@ public class PhrasesActivity extends AppCompatActivity {
         customArrayAdapter FamilyMemArray = new customArrayAdapter(this,phrasess);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(FamilyMemArray);
+        listView.setBackgroundColor(Color.parseColor("#87CEEB"));
+
 
     }
 }
-**/
 

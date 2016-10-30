@@ -6,22 +6,31 @@ package com.example.android.miwok;
 
 public class Word {
 
-    private String mMivokwords;
+    private String mUrduwords;
     private String mdefaultWords;
-    private int mimageResID;
+    private static final int NO_RESOURCE_ID = -1;
+    private int mimageResID=NO_RESOURCE_ID;
 
 
-    public Word(String mivokwords,String defaultWords,int imageResId)
+
+
+    public Word(String urduwords,String defaultWords,int imageResId)
     {
-        mMivokwords=mivokwords;
+        mUrduwords = urduwords;
         mdefaultWords=defaultWords;
         mimageResID=imageResId;
     }
 
-
-    public String getmivokTranslation()
+    public Word(String urduwords,String defaultWords)
     {
-        return mMivokwords;
+        mUrduwords = urduwords;
+        mdefaultWords = defaultWords;
+    }
+
+
+    public String getUrduwordsTranslation()
+    {
+        return mUrduwords;
 
     }
 
@@ -33,6 +42,12 @@ public class Word {
     public int getimageResID()
     {
         return mimageResID;
+    }
+
+    public boolean hasImage()
+    {
+        return mimageResID != NO_RESOURCE_ID;
+
     }
 
 }

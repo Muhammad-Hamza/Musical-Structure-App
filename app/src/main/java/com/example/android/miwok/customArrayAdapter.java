@@ -38,14 +38,22 @@ public class customArrayAdapter extends ArrayAdapter<Word> {
         Word currentWordPosition = getItem(position);
 
         TextView mivokText = (TextView) listItemView.findViewById(R.id.miwokText);
-        mivokText.setText(currentWordPosition.getmivokTranslation());
+        mivokText.setText(currentWordPosition.getUrduwordsTranslation());
 
 
         TextView defaultText = (TextView) listItemView.findViewById(R.id.defaultText);
         defaultText.setText(currentWordPosition.getDefaultTranslation());
 
         ImageView image = (ImageView) listItemView.findViewById(R.id.imageResource);
-        image.setImageResource(currentWordPosition.getimageResID());
+
+        if(currentWordPosition.hasImage())
+        {
+            image.setImageResource(currentWordPosition.getimageResID());
+        }
+        else {
+            image.setVisibility(View.GONE);
+        }
+
 
 
         return listItemView;
