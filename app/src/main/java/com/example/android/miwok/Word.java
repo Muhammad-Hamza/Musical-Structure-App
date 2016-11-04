@@ -50,4 +50,9 @@ public class Word {
 
     }
 
+    public void mediaplayerMethod(int songResid)
+    {
+
+    }
+
 }
